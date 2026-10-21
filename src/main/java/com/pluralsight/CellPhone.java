@@ -1,13 +1,13 @@
 package com.pluralsight;
 
 public class CellPhone {
-    private int serialNumber;
+    private String serialNumber;
     private String model;
     private String carrier;
     private String phoneNumber;
     private String owner;
 
-    public CellPhone(int serialNumber, String model, String carrier, String phoneNumber, String owner) {
+    public CellPhone(String serialNumber, String model, String carrier, String phoneNumber, String owner) {
         this.serialNumber = serialNumber;
         this.model = model;
         this.carrier = carrier;
@@ -15,11 +15,11 @@ public class CellPhone {
         this.owner = owner;
     }
 
-    public int getSerialNumber() {
-        return this.serialNumber;
+    public String getSerialNumber() {
+        return serialNumber;
     }
 
-    public void setSerialNumber(int serialNumber) {
+    public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
 
